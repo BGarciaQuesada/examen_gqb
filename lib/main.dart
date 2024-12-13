@@ -1,3 +1,4 @@
+import 'package:fl_examen_gqb/screens/sign_in_screen_gbq.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/home_screen_gqb.dart';
@@ -9,9 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-        home: HomeScreen()
+        home: SignInScreen()
     );
   }
 }

@@ -1,5 +1,4 @@
-import 'dart:ui';
-
+import 'package:fl_examen_gqb/screens/sign_in_screen_gbq.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,15 +8,16 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          FlutterLogo(),
+          const FlutterLogo(),
           ElevatedButton(
-              onPressed: Navigator.push(),
-              child: Padding(
+              onPressed: null, // esto debería llevar al otro pero... :(
+              child: const Padding(
                 padding: EdgeInsets.all(20.0),
                 child: Text('Sign up', style: TextStyle(fontSize: 20)),
               )),
-          ElevatedButton(
+          const ElevatedButton(
               onPressed: null, //Deshabilitado
               child: Padding(
                 padding: EdgeInsets.all(20.0),
