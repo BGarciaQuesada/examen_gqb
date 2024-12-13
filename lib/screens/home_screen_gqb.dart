@@ -7,15 +7,16 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Column(
         children: [
           FlutterLogo(),
           ElevatedButton(
-              onPressed: Navigator.push(
-                context,
-              ),
-              child: Text('Sign in', style: TextStyle(fontSize: 20))),
+              onPressed: Navigator.push(),
+              child: Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Text('Sign up', style: TextStyle(fontSize: 20)),
+              )),
           ElevatedButton(
               onPressed: null, //Deshabilitado
               child: Padding(

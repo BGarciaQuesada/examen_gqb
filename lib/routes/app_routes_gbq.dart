@@ -8,5 +8,8 @@ class AppRoutes {
     MenuOption(
         route: 'home',
         screen: const HomeScreen()),
+    MenuOption(
+        route: 'home',
+        screen: const HomeScreen()),
   ];
 }
