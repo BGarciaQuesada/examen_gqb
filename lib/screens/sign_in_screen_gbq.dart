@@ -8,22 +8,18 @@ class SignInScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final myFormKey = GlobalKey<FormState>();
 
-    final ValueNotifier<bool> _checkEnabled = ValueNotifier<bool>(true);
-
     final Map<String, String> formValues = {
       'user': 'user',
       'password': 'password',
     };
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Forms: Inputs'),
-      ),
       body: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Form(
             key: myFormKey,
             child: Column(children: [
+              const FlutterLogo(size: 100),
               CustomTextFormField(
                 hintText: 'Usuario',
                 labelText: 'Usuario',
@@ -39,7 +35,7 @@ class SignInScreen extends StatelessWidget {
                 hintText: 'Contraseña',
                 labelText: 'Contraseña',
                 obscureText: true,
-                formProperty: 'apellidos',
+                formProperty: 'contraseña',
                 formValues: formValues,
               ),
               const SizedBox(
@@ -60,6 +56,10 @@ class SignInScreen extends StatelessWidget {
                       child: Text('Enviar'))),
             ]),
           )),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.close),
+        onPressed: () => Navigator.pop(context), // Retroceder
+      ),
     );
   }
 }

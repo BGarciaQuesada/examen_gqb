@@ -10,9 +10,9 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const FlutterLogo(),
+          const FlutterLogo(size: 100),
           ElevatedButton(
-              onPressed: null, // esto debería llevar al otro pero... :(
+              onPressed: null, // esto tendría que llevar a la pantalla...
               child: const Padding(
                 padding: EdgeInsets.all(20.0),
                 child: Text('Sign up', style: TextStyle(fontSize: 20)),
