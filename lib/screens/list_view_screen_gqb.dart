@@ -9,6 +9,7 @@ class ListViewScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text('ListViewScreen'),
+          // Foto de perfil... :(
         ),
         body: ListView(
           children: [
@@ -24,7 +25,7 @@ class ListViewScreen extends StatelessWidget {
             ),
             ListTile(
               trailing: const Icon(Icons.access_alarm),
-              title: Text("Reservas"),
+              title: const Text("Reservas"),
               onTap: () => displayDialog(context),
             ),
           ],
